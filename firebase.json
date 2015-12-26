@@ -1,0 +1,9 @@
+{
+  "firebase": "pokeapp-sss",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
