@@ -48,6 +48,10 @@ body {
     box-shadow: 0px 0px 17px 3px rgba(204,204,204,1);
   }
 
+  .pokeleft {
+    width: 95%;
+  }
+
   .basic-info {
     padding: 20px;
     background-color: #fafafa;
@@ -90,10 +94,21 @@ body {
       display: inline-block;
 
       .game {
-        display: block;
+        display: inline;
         text-transform: capitalize;
         font-weight: 600;
         font-style: italic;
+        margin-right: 5px;
+
+        &:after {
+          content: ',';
+        }
+
+        &:last-child {
+          &:after {
+            content: '';
+          }
+        }
       }
     }
 

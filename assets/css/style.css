@@ -72,6 +72,9 @@ body {
 .pokeInfo .pokeright:last-child {
   margin-left: 0;
 }
+.pokeInfo .pokeleft {
+  width: 95%;
+}
 .pokeInfo .basic-info {
   padding: 20px;
   background-color: #fafafa;
@@ -107,10 +110,17 @@ body {
   display: inline-block;
 }
 .pokeInfo .desc .games .game {
-  display: block;
+  display: inline;
   text-transform: capitalize;
   font-weight: 600;
   font-style: italic;
+  margin-right: 5px;
+}
+.pokeInfo .desc .games .game:after {
+  content: ',';
+}
+.pokeInfo .desc .games .game:last-child:after {
+  content: '';
 }
 .pokeInfo .small-row {
   display: block;
