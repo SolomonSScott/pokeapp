@@ -1,0 +1,265 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Hind', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#main {
+  display: block;
+}
+#main::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.right {
+  float: left;
+  display: block;
+  margin-right: 2.3576516%;
+  width: 65.8807828%;
+  margin-left: 34.1192172%;
+}
+.right:last-child {
+  margin-right: 0;
+}
+
+.pokeInfo {
+  display: block;
+}
+.pokeInfo::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.pokeInfo h2 {
+  display: block;
+  border-bottom: 1px solid #c4c4c4;
+  margin-top: 0;
+  padding: 20px 0 15px;
+  text-transform: capitalize;
+}
+.pokeInfo .pokeimg {
+  border-bottom: 5px solid #FFC27F;
+  padding: 20px;
+}
+.pokeInfo .pokeimg img {
+  max-width: 100%;
+}
+.pokeInfo .pokeright {
+  float: right;
+  display: block;
+  margin-left: 2.3576516%;
+  width: 31.7615656%;
+  margin-right: 4.26490215%;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 17px 3px #cccccc;
+  box-shadow: 0px 0px 17px 3px #cccccc;
+}
+.pokeInfo .pokeright:last-child {
+  margin-left: 0;
+}
+.pokeInfo .basic-info {
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 0px 0px 5px 5px;
+}
+.pokeInfo .abilities {
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: 20px;
+}
+.pokeInfo .abilities h5 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.pokeInfo .abilities .ability {
+  text-transform: capitalize;
+  display: inline-block;
+  margin-right: 20px;
+}
+.pokeInfo .abilities .ability:last-child {
+  margin-right: 0;
+}
+.pokeInfo .pokedex-num {
+  margin-bottom: 10px;
+}
+.pokeInfo .pokedex-num .num {
+  font-weight: 600;
+}
+.pokeInfo .desc {
+  margin-bottom: 30px;
+}
+.pokeInfo .desc .games {
+  margin-right: 20px;
+  display: inline-block;
+}
+.pokeInfo .desc .games .game {
+  display: block;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-style: italic;
+}
+.pokeInfo .small-row {
+  display: block;
+}
+.pokeInfo .small-row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.pokeInfo .small-row .half {
+  float: left;
+  display: block;
+  margin-right: 2.3576516%;
+  width: 48.8211742%;
+}
+.pokeInfo .small-row .half:last-child {
+  margin-right: 0;
+}
+.pokeInfo .small-row .half h5 {
+  margin-bottom: 5px;
+}
+
+.types {
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.type {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 8px 10px 5px;
+  background-color: #F88863;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.type:last-child {
+  margin-right: 0;
+}
+.type.grass {
+  background-color: #78c850;
+}
+.type.water {
+  background-color: #386ceb;
+  color: #fff;
+}
+.type.fire {
+  background-color: #f08030;
+}
+.type.ice {
+  background-color: #98d8d8;
+}
+.type.normal {
+  background-color: #A1A171;
+}
+.type.bug {
+  background-color: #a8b820;
+}
+.type.poison {
+  background-color: #a040a0;
+  color: #FFFFFF;
+}
+.type.ground {
+  background-color: #DCB958;
+}
+.type.rock {
+  background-color: #AD9735;
+}
+.type.flying {
+  background-color: #A38CE6;
+}
+.type.dragon {
+  background-color: #6327F5;
+  color: #fff;
+}
+.type.fairy {
+  background-color: #E487E4;
+}
+.type.steel {
+  background-color: #AAAAC7;
+}
+.type.dark {
+  background-color: #705848;
+  color: #fff;
+}
+.type.psychic {
+  background-color: #F85888;
+}
+.type.fighting {
+  background-color: #c03028;
+  color: #fff;
+}
+.type.electric {
+  background-color: #f8d030;
+}
+.type.ghost {
+  background-color: #624D85;
+  color: #fff;
+}
+
+.pokedex {
+  float: left;
+  display: block;
+  margin-right: 2.3576516%;
+  width: 31.7615656%;
+  position: fixed;
+  background-color: #AC4147;
+  height: 100vh;
+  overflow: hidden;
+}
+.pokedex:last-child {
+  margin-right: 0;
+}
+.pokedex h3 {
+  background-color: #411F2D;
+  margin: 0;
+  padding: 20px;
+  color: #FFFFFF;
+}
+.pokedex .pokedexList {
+  padding-left: 0;
+  height: 91%;
+  overflow: scroll;
+  margin: 0;
+}
+.pokedex .pokedexList li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.pokedex .pokedexList li:nth-child(even) {
+  background-color: #c25e64;
+}
+.pokedex .pokedexList li .entryImg {
+  width: 15%;
+  margin-right: 20px;
+}
+.pokedex .pokedexList li .entryImg img {
+  max-width: 100%;
+}
+.pokedex .pokedexList li span {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  text-transform: capitalize;
+}
