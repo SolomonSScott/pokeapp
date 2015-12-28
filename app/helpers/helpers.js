@@ -42,6 +42,12 @@ var helpers = {
 
     //return Number(height).toFixed(1);
   },
+
+  getPokemon: function(id) {
+    $.get('http://pokeapi.co/api/v1/pokemon/' + id + '/' , function (data) {
+      return data;
+    });
+  }
 }
 
 export default helpers;
